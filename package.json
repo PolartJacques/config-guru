@@ -1,19 +1,22 @@
 {
-  "name": "config-guru",
-  "version": "1.0.0",
-  "description": "configuration helper for any javascript based app",
-  "scripts": {
-    "start": "ts-node src/index.ts",
-    "check": "tsc --noEmit",
-    "build": "tsc"
+  "author": "Jacques Polart",
+  "bin": {
+    "config-guru": "dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.6.5",
+  "description": "configuration helper for any javascript based app",
   "devDependencies": {
     "@types/node": "^22.13.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
-  }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "name": "config-guru",
+  "packageManager": "pnpm@10.6.5",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "ts-node src/index.ts"
+  },
+  "version": "1.0.1"
 }
